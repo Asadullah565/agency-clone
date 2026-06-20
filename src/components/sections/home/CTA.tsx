@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 
 export function CTA() {
   return (
-    <section id="cta" className="bg-white py-20   md:px-16 lg:px-13.5 w-full">
+    <section id="cta" className="bg-white py-20  px-8 md:px-16 lg:px-13.5 w-full">
       <div className="mx-auto max-w-wide w-full flex flex-col md:flex-row md:items-center md:justify-between gap-8 md:gap-12">
         <div className="max-w-3xl">
           <h2 className="text-2xl md:text-3xl lg:text-[34px] font-bold text-primary tracking-tight leading-tight mb-4">

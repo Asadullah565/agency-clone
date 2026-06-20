@@ -9,7 +9,7 @@ export function Portfolio() {
   ]
 
   return (
-    <section id="portfolio" className="bg-white py-28 px-8 md:px-16 lg:13.5 w-full">
+    <section id="portfolio" className="bg-white py-28 px-8 md:px-16 lg:px-13.5 w-full">
       <div className="mx-auto max-w-wide w-full">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight mb-4">

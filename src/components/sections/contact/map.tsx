@@ -8,7 +8,7 @@ function Map(){
       
       {/* LEFT COLUMN */}
       <div>
-        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8 px-8 md:px-0">
           Request Free Consultation
         </h2>
 
@@ -57,11 +57,11 @@ function Map(){
 
       {/* RIGHT COLUMN */}
       <div>
-        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8 lg:pl-15 ">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-8 lg:pl-15 sm:mt-10  px-8 md:px-0">
           Get In Touch
         </h2>
 
-        <div className="flex flex-col gap-6  lg:pl-15">
+        <div className="flex flex-col gap-6  lg:pl-15 px-8 md:px-0">
           <span className="text-xs font-bold tracking-widest text-slate-900">
             REACH US
           </span>
