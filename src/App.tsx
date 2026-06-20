@@ -1,21 +1,49 @@
-import { Button } from "@/components/ui/button"
+
+import { useEffect } from "react"
+import {Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom"
+import { Header } from "./components/layout/Header"
+import { Footer } from "./components/layout/Footer"
+import { About } from "./pages/About"
+import Home from "./pages/Home"
+import MenuServices from "./pages/Menuservices"
+import MenuContact from "./pages/MenuContact"
+
+function ScrollToHashElement() {
+  const { hash, pathname } = useLocation()
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.replace("#", ""))
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" })
+        }, 100)
+      }
+    } else {
+      window.scrollTo(0, 0)
+    }
+  }, [hash, pathname])
+
+  return null
+}
 
 export function App() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
+    <Router>
+      <ScrollToHashElement />
+      <div className="relative min-h-screen  text-white font-sans antialiased">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<MenuServices/>}/>
+            <Route path={"/contact"} element={<MenuContact/>}/>
+          </Routes>
+          </main>
+          <Footer />
       </div>
-    </div>
+    </Router>
   )
 }
 
-export default App
+export default App;
