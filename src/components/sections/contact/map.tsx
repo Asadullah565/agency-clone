@@ -19,19 +19,19 @@ function Map(){
             <input
               type="text"
               placeholder="Your Name *"
-              className="border border-slate-200 rounded-lg px-4 py-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="border border-slate-200 rounded-lg px-4 py-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-black"
             />
 
             <input
               type="email"
               placeholder="Your Email *"
-              className="border border-slate-200 rounded-lg px-4 py-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="border border-slate-200 rounded-lg px-4 py-3 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-black"
             />
 
             <textarea
               placeholder="Your Message"
               rows={5}
-              className="border border-slate-200 rounded-lg px-4 py-3 text-sm placeholder:text-slate-400 resize-none focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="border border-slate-200 rounded-lg px-4 py-3 text-sm placeholder:text-slate-400 resize-none focus:outline-none focus:ring-2 focus:ring-indigo-400 text-black"
             />
 
             <button
