@@ -15,7 +15,7 @@ const [openIndex, setOpenIndex] = useState(-1);
         <>
 
         <section className="max-w-full bg-[#f7fafe] pt-25">
-        <div className="flex lg:flex-row sm:flex-col  ">
+        <div className="flex lg:flex-row flex-col  ">
 
   <div
   className={`relative border-2 overflow-hidden transition-[height] duration-500 ease-in-out ${
